@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class İlkProje01 {
+    public static void main(String[] args) {
+
+        int km;
+
+        double perKm = 2.20,startPrice = 15,total;
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Km cinsinden mesafeyi giriniz : ");
+        km = input.nextInt();
+
+        total = perKm*km;
+
+        total += startPrice;
+
+        total = (total < 20) ? 20 : total;
+
+        System.out.println("Fiyat : " + total);
+
+    }
+
+}
